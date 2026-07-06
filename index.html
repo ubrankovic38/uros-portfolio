@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uros Brankovic — Senior Shopify Plus Developer</title>
+  <meta name="description" content="Seasoned Senior Full Stack Shopify Developer with 7+ years of experience. Up-to-date with every Shopify Edition — implementing Functions, Checkout Extensibility, Hydrogen, and AI-powered commerce.">
+  <meta property="og:title" content="Uros Brankovic — Senior Shopify Plus Developer">
+  <meta property="og:description" content="Full Stack Shopify Developer portfolio. Rust, TypeScript, Liquid, and scalable e-commerce solutions. Always current with Shopify Editions.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter','Geist',sans-serif;background:#05080A;color:#fff;overflow-x:hidden}
+    ::selection{background:rgba(198,249,31,.3);color:#c6f91f}
+    .font-geist{font-family:'Geist',sans-serif}
+    @keyframes reveal{from{opacity:0;transform:translateY(20px);filter:blur(8px)}to{opacity:1;transform:translateY(0);filter:blur(0)}}
+    .reveal{opacity:0}.reveal.visible{animation:reveal .8s cubic-bezier(.2,.8,.2,1) both}
+    .reveal.visible.d1{animation-delay:.1s}.reveal.visible.d2{animation-delay:.2s}.reveal.visible.d3{animation-delay:.3s}
+    .reveal.visible.d4{animation-delay:.4s}.reveal.visible.d5{animation-delay:.5s}.reveal.visible.d6{animation-delay:.6s}
+    .reveal.visible.d7{animation-delay:.7s}.reveal.visible.d8{animation-delay:.8s}.reveal.visible.d9{animation-delay:.9s}
+    @keyframes marquee-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+    .animate-marquee{animation:marquee-scroll 40s linear infinite}
+    .animate-marquee:hover{animation-play-state:paused}
+    @keyframes pulse-ring{0%{transform:scale(.8);opacity:.5}100%{transform:scale(2.2);opacity:0}}
+    .pulse-ring{animation:pulse-ring 2.5s cubic-bezier(0,0,.2,1) infinite}
+    .gradient-line{background:linear-gradient(to right,transparent,rgba(255,255,255,.1),transparent);height:1px}
+    .timeline-dot{box-shadow:0 0 10px rgba(198,249,31,.4),0 0 20px rgba(198,249,31,.1)}
+    .card-glow{position:relative;overflow:hidden}
+    .card-glow::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at var(--mx,50%) var(--my,50%),rgba(198,249,31,.04) 0%,transparent 50%);pointer-events:none;opacity:0;transition:opacity .5s}
+    .card-glow:hover::before{opacity:1}
+    .nav-scrolled{background:rgba(0,0,0,.8)!important;backdrop-filter:blur(12px)!important;border-bottom:1px solid rgba(255,255,255,.05)!important}
+    .mobile-menu{transform:translateX(100%);transition:transform .3s cubic-bezier(.2,.8,.2,1)}
+    .mobile-menu.open{transform:translateX(0)}
+    @keyframes toast-in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes toast-out{from{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(16px)}}
+    .toast-enter{animation:toast-in .3s ease both}.toast-exit{animation:toast-out .3s ease both}
+    ::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#05080A}
+    ::-webkit-scrollbar-thumb{background:rgba(255,255,255,.1);border-radius:3px}
+    ::-webkit-scrollbar-thumb:hover{background:rgba(255,255,255,.2)}
+    .stat-number{background:linear-gradient(135deg,#fff 0%,rgba(255,255,255,.7) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    @keyframes shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}
+    .shimmer-border{background:linear-gradient(90deg,transparent,rgba(198,249,31,.15),transparent);background-size:200% 100%;animation:shimmer 3s linear infinite}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+    .float{animation:float 4s ease-in-out infinite}
+    .edition-card{transition:all .4s cubic-bezier(.2,.8,.2,1)}
+    .edition-card:hover{transform:translateY(-4px);border-color:rgba(198,249,31,.2)}
+    .status-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
+    .status-implemented{background:#c6f91f;box-shadow:0 0 8px rgba(198,249,31,.5)}
+    .status-progress{background:#facc15;box-shadow:0 0 8px rgba(250,204,21,.4)}
+    .status-radar{background:#60a5fa;box-shadow:0 0 8px rgba(96,165,250,.4)}
+    .status-deprecated{background:#ef4444;box-shadow:0 0 8px rgba(239,68,68,.3)}
+    @keyframes pulse-dot{0%,100%{opacity:1}50%{opacity:.4}}
+    .pulse-dot{animation:pulse-dot 2s ease-in-out infinite}
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════ NAVIGATION ═══════════════════════ -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" style="background:transparent;border-bottom:1px solid transparent">
+  <div class="max-w-screen-2xl mx-auto px-6 sm:px-8">
+    <div class="grid grid-cols-12 items-center h-16 sm:h-20">
+      <div class="col-span-4 flex items-center gap-3">
+        <div class="w-8 h-8 bg-[#c6f91f] rounded-sm flex items-center justify-center"><span class="text-black font-geist font-bold text-sm">U</span></div>
+        <span class="font-geist font-semibold text-sm tracking-tight hidden sm:block">UROS BRANKOVIC</span>
+      </div>
+      <div class="col-span-4 hidden md:flex items-center justify-center gap-6 lg:gap-8">
+        <a href="#about" class="nav-link text-[11px] font-medium uppercase tracking-wide text-white/60 hover:text-white transition-colors">About</a>
+        <a href="#editions" class="nav-link text-[11px] font-medium uppercase tracking-wide text-white/60 hover:text-white transition-colors">Editions</a>
+        <a href="#skills" class="nav-link text-[11px] font-medium uppercase tracking-wide text-white/60 hover:text-white transition-colors">Skills</a>
+        <a href="#cases" class="nav-link text-[11px] font-medium uppercase tracking-wide text-white/60 hover:text-white transition-colors">Cases</a>
+        <a href="#experience" class="nav-link text-[11px] font-medium uppercase tracking-wide text-white/60 hover:text-white transition-colors">Experience</a>
+        <a href="#contact" class="nav-link text-[11px] font-medium uppercase tracking-wide text-white/60 hover:text-white transition-colors">Contact</a>
+      </div>
+      <div class="col-span-8 md:col-span-4 flex items-center justify-end gap-4">
+        <a href="#contact" class="hidden sm:inline-flex items-center gap-2 bg-white text-black text-[11px] font-medium uppercase tracking-wide px-5 py-2.5 rounded-sm hover:bg-slate-200 transition-colors">Hire Me <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+        <button id="mobile-toggle" class="md:hidden p-2 text-white/70 hover:text-white transition-colors"><i data-lucide="menu" class="w-5 h-5"></i></button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="mobile-menu fixed inset-0 z-[60] bg-[#05080A]/98 backdrop-blur-xl flex flex-col">
+  <div class="flex items-center justify-between px-6 h-16">
+    <div class="w-8 h-8 bg-[#c6f91f] rounded-sm flex items-center justify-center"><span class="text-black font-geist font-bold text-sm">U</span></div>
+    <button id="mobile-close" class="p-2 text-white/70 hover:text-white transition-colors"><i data-lucide="x" class="w-5 h-5"></i></button>
+  </div>
+  <div class="flex-1 flex flex-col items-center justify-center gap-7">
+    <a href="#about" class="mobile-link text-2xl font-light tracking-tight text-white/60 hover:text-[#c6f91f] transition-colors">About</a>
+    <a href="#editions" class="mobile-link text-2xl font-light tracking-tight text-white/60 hover:text-[#c6f91f] transition-colors">Editions</a>
+    <a href="#skills" class="mobile-link text-2xl font-light tracking-tight text-white/60 hover:text-[#c6f91f] transition-colors">Skills</a>
+    <a href="#cases" class="mobile-link text-2xl font-light tracking-tight text-white/60 hover:text-[#c6f91f] transition-colors">Cases</a>
+    <a href="#experience" class="mobile-link text-2xl font-light tracking-tight text-white/60 hover:text-[#c6f91f] transition-colors">Experience</a>
+    <a href="#contact" class="mobile-link text-2xl font-light tracking-tight text-white/60 hover:text-[#c6f91f] transition-colors">Contact</a>
+    <div class="mt-6"><a href="#contact" class="mobile-link inline-flex items-center gap-2 bg-[#c6f91f] text-black text-sm font-medium uppercase tracking-wide px-8 py-4 rounded-sm">Hire Me <i data-lucide="arrow-right" class="w-4 h-4"></i></a></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<section class="relative min-h-screen flex items-center overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute top-1/4 -left-32 w-[500px] h-[500px] bg-[#c6f91f]/[0.03] rounded-full blur-[120px]"></div>
+    <div class="absolute bottom-1/4 right-0 w-[400px] h-[400px] bg-[#c6f91f]/[0.02] rounded-full blur-[120px]"></div>
+  </div>
+  <div class="absolute inset-0 pointer-events-none" style="background-image:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);background-size:60px 60px"></div>
+  <div class="relative max-w-screen-2xl mx-auto w-full px-6 sm:px-8 lg:px-20 pt-32 pb-20">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <div class="reveal d1 flex flex-wrap items-center gap-3 mb-8">
+          <div class="relative flex items-center justify-center">
+            <div class="w-2.5 h-2.5 bg-[#c6f91f] rounded-full"></div>
+            <div class="absolute w-2.5 h-2.5 bg-[#c6f91f] rounded-full pulse-ring"></div>
+          </div>
+          <span class="text-xs font-medium uppercase tracking-widest text-white/60">Available for new projects</span>
+        </div>
+
+        <h1 class="reveal d2 font-geist font-light text-5xl sm:text-6xl lg:text-7xl tracking-tighter leading-[1.1] mb-6">
+          Senior<br>
+          <span class="text-[#c6f91f]">Shopify Plus</span><br>
+          Developer
+        </h1>
+
+        <p class="reveal d3 text-lg lg:text-xl font-light text-white/60 leading-relaxed max-w-lg mb-6">
+          7+ years crafting high-performance e-commerce solutions with Rust, TypeScript, and Liquid. Always current with every Shopify Edition.
+        </p>
+
+        <!-- Editions badge -->
+        <div class="reveal d4 flex items-center gap-3 mb-10">
+          <div class="flex items-center gap-2 bg-[#c6f91f]/[0.08] border border-[#c6f91f]/20 rounded-sm px-3 py-1.5">
+            <i data-lucide="radio" class="w-3.5 h-3.5 text-[#c6f91f]"></i>
+            <span class="text-[11px] font-medium text-[#c6f91f]">Winter '26 Edition Ready</span>
+          </div>
+          <div class="flex items-center gap-2 bg-white/[0.04] border border-white/[0.08] rounded-sm px-3 py-1.5">
+            <span class="status-dot status-implemented pulse-dot"></span>
+            <span class="text-[11px] text-white/50">Scripts → Functions migrated</span>
+          </div>
+        </div>
+
+        <div class="reveal d5 flex flex-wrap items-center gap-4">
+          <a href="#contact" class="group inline-flex items-center gap-3 bg-white text-black text-xs font-medium uppercase tracking-wide px-7 py-4 rounded-sm hover:bg-slate-200 transition-colors">Get in Touch <i data-lucide="arrow-up-right" class="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i></a>
+          <a href="#editions" class="group inline-flex items-center gap-3 border border-white/10 text-white text-xs font-medium uppercase tracking-wide px-7 py-4 rounded-sm hover:bg-white/[0.04] transition-colors">Shopify Editions <i data-lucide="arrow-down" class="w-4 h-4 transition-transform group-hover:translate-y-0.5"></i></a>
+        </div>
+      </div>
+
+      <!-- Right — Stats Card -->
+      <div class="reveal d6 hidden lg:block">
+        <div class="relative">
+          <div class="absolute -top-px -left-px -right-px -bottom-px rounded-sm" style="background:linear-gradient(135deg,rgba(198,249,31,.3),transparent 40%,transparent 60%,rgba(198,249,31,.1))"></div>
+          <div class="relative bg-[#0B0F13] border border-white/[0.05] rounded-sm p-10">
+            <div class="grid grid-cols-2 gap-8">
+              <div class="space-y-2"><div class="stat-number text-5xl font-geist font-light tracking-tighter" data-count="7">0</div><div class="text-[10px] font-medium uppercase tracking-widest text-white/40">Years Experience</div></div>
+              <div class="space-y-2"><div class="stat-number text-5xl font-geist font-light tracking-tighter" data-count="50">0</div><div class="text-[10px] font-medium uppercase tracking-widest text-white/40">Projects Shipped</div></div>
+              <div class="space-y-2"><div class="stat-number text-5xl font-geist font-light tracking-tighter" data-count="30">0</div><div class="text-[10px] font-medium uppercase tracking-widest text-white/40">Shopify Stores</div></div>
+              <div class="space-y-2"><div class="stat-number text-5xl font-geist font-light tracking-tighter" data-count="10">0</div><div class="text-[10px] font-medium uppercase tracking-widest text-white/40">Editions Tracked</div></div>
+            </div>
+            <div class="gradient-line mt-8 mb-6"></div>
+            <!-- Mini edition timeline -->
+            <div class="space-y-3">
+              <div class="text-[10px] font-medium uppercase tracking-widest text-white/30 mb-3">Latest Feature Adoptions</div>
+              <div class="flex items-center gap-2"><span class="status-dot status-implemented"></span><span class="text-xs text-white/60">Checkout Extensibility (GA)</span></div>
+              <div class="flex items-center gap-2"><span class="status-dot status-implemented"></span><span class="text-xs text-white/60">Shopify Functions in Rust</span></div>
+              <div class="flex items-center gap-2"><span class="status-dot status-implemented"></span><span class="text-xs text-white/60">Hydrogen + Oxygen 2024.x</span></div>
+              <div class="flex items-center gap-2"><span class="status-dot status-progress"></span><span class="text-xs text-white/60">AI-Powered Semantic Search</span></div>
+              <div class="flex items-center gap-2"><span class="status-dot status-progress"></span><span class="text-xs text-white/60">Shopify Magic Integration</span></div>
+              <div class="flex items-center gap-2"><span class="status-dot status-radar"></span><span class="text-xs text-white/60">Custom Storefronts (Beta)</span></div>
+            </div>
+            <div class="gradient-line mt-6 mb-4"></div>
+            <div class="flex items-center gap-3">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-[#c6f91f]"></i>
+              <span class="text-xs text-white/50">Belgrade, Serbia</span>
+              <span class="text-white/15 mx-1">·</span>
+              <i data-lucide="clock" class="w-3.5 h-3.5 text-[#c6f91f]"></i>
+              <span class="text-xs text-white/50">CET (UTC+1)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal d8 absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+      <span class="text-[10px] uppercase tracking-widest text-white/25">Scroll</span>
+      <div class="w-px h-8 bg-gradient-to-b from-white/25 to-transparent"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ MARQUEE ═══════════════════════ -->
+<div class="relative overflow-hidden py-6 border-y border-white/[0.05]">
+  <div class="flex animate-marquee whitespace-nowrap">
+    <span class="mx-8 text-sm font-light text-white/15 uppercase tracking-widest">Shopify Plus</span><span class="mx-4 text-[#c6f91f]/25">✦</span>
+    <span class="mx-8 text-sm font-light text-white/15 uppercase tracking-widest">Rust Functions</span><span class="mx-4 text-[#c6f91f]/25">✦</span>
+    <span class="mx-8 text-sm font-light text-white/15 uppercase tracking-widest">Checkout Extensibility</span><span class="mx-4 text-[#c6f91f]/25">✦</span>
+    <span class="mx-8 text-sm font-light text-white/15 uppercase tracking-widest">Hydrogen</span><span class="mx-4 text-[#c6f91f]/25">✦</span>
+    <span class="mx-8 text-sm font-light text-white/15 uppercase tracking-widest">Remix</span><span class="mx-4 text-[#c6f91f]/25">✦</span>
+    <span class="mx-8 text-sm font-light text-white/15 uppercase tracking-widest">TypeScript</span><span class="mx-4 text-[#c6f91f]/25">✦</span>
+    <span class="mx-8 text-sm font-light text-white/15 uppercase tracking-widest">Liquid</span><span class="mx-4 text-[#c6f91f]/25">✦</span>
+    <span class="mx-8 text-sm font-light text-white/15 uppercase tracking-widest">GraphQL</span><span class="mx-4 text-[#c6f91f]/25">✦</span>
+    <span class="mx-8 text-sm font-light text-white/15 uppercase tracking-widest">Go</span><span class="mx-4 text-[#c6f91f]/25">✦</span>
+    <span class="mx-8 text-sm font-light text-white/15 uppercase tracking-widest">Shopify Magic</span><span class="mx-4 text-[#c6f91f]/25">✦</span>
+    <span class="mx-8 text-sm font-light text-white/15 uppercase tracking-widest">Oxygen</span><span class="mx-4 text-[#c6f91f]/25">✦</span>
+    <span class="mx-8 text-sm font-light text-white/15 uppercase tracking-widest">Storefront API</span><span class="mx-4 text-[#c6f91f]/25">✦</span>
+    <!-- duplicate -->
+    <span class="mx-8 text-sm font-light text-white/15 uppercase tracking-widest">Shopify Plus</span><span class="mx-4 text-[#c6f91f]/25">✦</span>
+    <span class="mx-8 text-sm font-light text-white/15 uppercase tracking-widest">Rust Functions</span><span class="mx-4 text-[#c6f91f]/25">✦</span>
+    <span class="mx-8 text-sm font-light text-white/15 uppercase tracking-widest">Checkout Extensibility</span><span class="mx-4 text-[#c6f91f]/25">✦</span>
+    <span class="mx-8 text-sm font-light text-white/15 uppercase tracking-widest">Hydrogen</span><span class="mx-4 text-[#c6f91f]/25">✦</span>
+    <span class="mx-8 text-sm font-light text-white/15 uppercase tracking-widest">Remix</span><span class="mx-4 text-[#c6f91f]/25">✦</span>
+    <span class="mx-8 text-sm font-light text-white/15 uppercase tracking-widest">TypeScript</span><span class="mx-4 text-[#c6f91f]/25">✦</span>
+    <span class="mx-8 text-sm font-light text-white/15 uppercase tracking-widest">Liquid</span><span class="mx-4 text-[#c6f91f]/25">✦</span>
+    <span class="mx-8 text-sm font-light text-white/15 uppercase tracking-widest">GraphQL</span><span class="mx-4 text-[#c6f91f]/25">✦</span>
+    <span class="mx-8 text-sm font-light text-white/15 uppercase tracking-widest">Go</span><span class="mx-4 text-[#c6f91f]/25">✦</span>
+    <span class="mx-8 text-sm font-light text-white/15 uppercase tracking-widest">Shopify Magic</span><span class="mx-4 text-[#c6f91f]/25">✦</span>
+    <span class="mx-8 text-sm font-light text-white/15 uppercase tracking-widest">Oxygen</span><span class="mx-4 text-[#c6f91f]/25">✦</span>
+    <span class="mx-8 text-sm font-light text-white/15 uppercase tracking-widest">Storefront API</span><span class="mx-4 text-[#c6f91f]/25">✦</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════ ABOUT ═══════════════════════ -->
+<section id="about" class="relative py-24 lg:py-32">
+  <div class="max-w-screen-2xl mx-auto px-6 sm:px-8 lg:px-20">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+      <div class="lg:col-span-4">
+        <div class="reveal"><span class="text-[10px] font-medium uppercase tracking-widest text-[#c6f91f] mb-4 block">01 — About</span>
+        <h2 class="font-geist font-light text-4xl sm:text-5xl tracking-tighter leading-[1.1]">Building the<br>future of<br><span class="text-white/30">commerce</span></h2></div>
+      </div>
+      <div class="lg:col-span-8">
+        <div class="reveal d2 space-y-6">
+          <p class="text-lg font-light text-white/60 leading-relaxed">Seasoned Senior Full Stack Shopify Developer with over 7 years of extensive experience in designing, developing, and optimizing Shopify platforms. Adept at leveraging a deep understanding of Rust, TypeScript, JavaScript, and Liquid to deliver scalable, high-performance e-commerce solutions.</p>
+          <p class="text-lg font-light text-white/60 leading-relaxed">I study every Shopify Edition the day it drops — from Winter '24 through Winter '26 — and translate new features into production-ready implementations. Whether it's migrating legacy Scripts to Rust Functions, adopting Checkout Extensibility before the deprecation deadline, or building headless storefronts with the latest Hydrogen release, I stay ahead so my clients stay ahead.</p>
+        </div>
+        <div class="reveal d3 grid grid-cols-1 sm:grid-cols-3 gap-px mt-12 bg-white/[0.05] rounded-sm overflow-hidden">
+          <div class="bg-[#0B0F13] p-6 space-y-3"><i data-lucide="zap" class="w-5 h-5 text-[#c6f91f]"></i><div class="text-sm font-medium">Edition-First</div><div class="text-xs text-white/40 leading-relaxed">Every new feature evaluated and adopted within release cycles.</div></div>
+          <div class="bg-[#0B0F13] p-6 space-y-3"><i data-lucide="code-2" class="w-5 h-5 text-[#c6f91f]"></i><div class="text-sm font-medium">Full Stack Depth</div><div class="text-xs text-white/40 leading-relaxed">From Rust Functions to Go backends — end-to-end ownership.</div></div>
+          <div class="bg-[#0B0F13] p-6 space-y-3"><i data-lucide="trending-up" class="w-5 h-5 text-[#c6f91f]"></i><div class="text-sm font-medium">ROI Driven</div><div class="text-xs text-white/40 leading-relaxed">Every feature measured by its impact on conversion and revenue.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ SHOPIFY EDITIONS TRACKER ═══════════════════════ -->
+<section id="editions" class="relative py-24 lg:py-32">
+  <div class="absolute inset-0 pointer-events-none"><div class="absolute top-0 left-0 right-0 gradient-line"></div></div>
+  <div class="max-w-screen-2xl mx-auto px-6 sm:px-8 lg:px-20">
+    <!-- Header -->
+    <div class="reveal mb-6">
+      <span class="text-[10px] font-medium uppercase tracking-widest text-[#c6f91f] mb-4 block">02 — Shopify Editions</span>
+      <h2 class="font-geist font-light text-4xl sm:text-5xl tracking-tighter leading-[1.1]">Always <span class="text-[#c6f91f]">current</span>,<br>always <span class="text-white/30">ahead</span></h2>
+    </div>
+    <p class="reveal d2 text-base font-light text-white/50 leading-relaxed max-w-2xl mb-14">Shopify ships two Editions per year — each packed with 100+ updates. I track every release, prioritize what matters for my clients, and implement before the competition catches up.</p>
+
+    <!-- Edition Timeline — Horizontal scroll on mobile -->
+    <div class="reveal d3 flex gap-4 overflow-x-auto pb-4 -mx-6 px-6 sm:mx-0 sm:px-0 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:overflow-visible" style="scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.1) transparent">
+
+      <!-- Winter '24 -->
+      <div class="edition-card bg-[#0B0F13] border border-white/[0.05] rounded-sm p-6 min-w-[280px] sm:min-w-0 flex-shrink-0">
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-[10px] font-medium uppercase tracking-widest text-white/30">Jan 2024</span>
+          <span class="text-[10px] font-medium text-white/20 bg-white/[0.04] px-2 py-0.5 rounded">Past</span>
+        </div>
+        <h3 class="font-geist text-lg font-medium tracking-tight mb-4">Winter '24</h3>
+        <div class="space-y-3">
+          <div class="flex items-start gap-2.5"><span class="status-dot status-implemented mt-1.5"></span><div><div class="text-xs text-white/70">Checkout Extensibility GA</div><div class="text-[10px] text-white/30 mt-0.5">Replaced checkout.liquid</div></div></div>
+          <div class="flex items-start gap-2.5"><span class="status-dot status-implemented mt-1.5"></span><div><div class="text-xs text-white/70">Functions API Expansion</div><div class="text-[10px] text-white/30 mt-0.5">Discount, shipping, payment</div></div></div>
+          <div class="flex items-start gap-2.5"><span class="status-dot status-implemented mt-1.5"></span><div><div class="text-xs text-white/70">Hydrogen 2024.1</div><div class="text-[10px] text-white/30 mt-0.5">Improved caching & streaming</div></div></div>
+          <div class="flex items-start gap-2.5"><span class="status-dot status-implemented mt-1.5"></span><div><div class="text-xs text-white/70">Shopify Markets Pro</div><div class="text-[10px] text-white/30 mt-0.5">Duties & tax automation</div></div></div>
+        </div>
+        <div class="mt-5 pt-4 border-t border-white/[0.05]"><span class="text-[10px] text-[#c6f91f]/60">4/4 features adopted</span></div>
+      </div>
+
+      <!-- Summer '24 -->
+      <div class="edition-card bg-[#0B0F13] border border-white/[0.05] rounded-sm p-6 min-w-[280px] sm:min-w-0 flex-shrink-0">
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-[10px] font-medium uppercase tracking-widest text-white/30">Jun 2024</span>
+          <span class="text-[10px] font-medium text-white/20 bg-white/[0.04] px-2 py-0.5 rounded">Past</span>
+        </div>
+        <h3 class="font-geist text-lg font-medium tracking-tight mb-4">Summer '24</h3>
+        <div class="space-y-3">
+          <div class="flex items-start gap-2.5"><span class="status-dot status-implemented mt-1.5"></span><div><div class="text-xs text-white/70">Scripts Deprecation Announced</div><div class="text-[10px] text-white/30 mt-0.5">Began proactive migration</div></div></div>
+          <div class="flex items-start gap-2.5"><span class="status-dot status-implemented mt-1.5"></span><div><div class="text-xs text-white/70">Storefront API @inContext</div><div class="text-[10px] text-white/30 mt-0.5">Country-aware rendering</div></div></div>
+          <div class="flex items-start gap-2.5"><span class="status-dot status-implemented mt-1.5"></span><div><div class="text-xs text-white/70">Oxygen Self-Hosted</div><div class="text-[10px] text-white/30 mt-0.5">Deploy to own infra</div></div></div>
+          <div class="flex items-start gap-2.5"><span class="status-dot status-implemented mt-1.5"></span><div><div class="text-xs text-white/70">Shopify Sidekick GA</div><div class="text-[10px] text-white/30 mt-0.5">Visual editing for themes</div></div></div>
+        </div>
+        <div class="mt-5 pt-4 border-t border-white/[0.05]"><span class="text-[10px] text-[#c6f91f]/60">4/4 features adopted</span></div>
+      </div>
+
+      <!-- Winter '25 -->
+      <div class="edition-card bg-[#0B0F13] border border-[#c6f91f]/10 rounded-sm p-6 min-w-[280px] sm:min-w-0 flex-shrink-0 relative overflow-hidden">
+        <div class="absolute top-0 left-0 right-0 h-px shimmer-border"></div>
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-[10px] font-medium uppercase tracking-widest text-white/30">Jan 2025</span>
+          <span class="text-[10px] font-medium text-[#c6f91f] bg-[#c6f91f]/[0.08] px-2 py-0.5 rounded">Active</span>
+        </div>
+        <h3 class="font-geist text-lg font-medium tracking-tight mb-4">Winter '25</h3>
+        <div class="space-y-3">
+          <div class="flex items-start gap-2.5"><span class="status-dot status-implemented mt-1.5"></span><div><div class="text-xs text-white/70">Shopify Magic — AI Descriptions</div><div class="text-[10px] text-white/30 mt-0.5">Auto-generate product content</div></div></div>
+          <div class="flex items-start gap-2.5"><span class="status-dot status-implemented mt-1.5"></span><div><div class="text-xs text-white/70">Enhanced Flow Automation</div><div class="text-[10px] text-white/30 mt-0.5">More triggers & conditions</div></div></div>
+          <div class="flex items-start gap-2.5"><span class="status-dot status-progress mt-1.5 pulse-dot"></span><div><div class="text-xs text-white/70">Subscriptions API v2</div><div class="text-[10px] text-white/30 mt-0.5">Native recurring billing</div></div></div>
+          <div class="flex items-start gap-2.5"><span class="status-dot status-progress mt-1.5 pulse-dot"></span><div><div class="text-xs text-white/70">Merchant Analytics Overhaul</div><div class="text-[10px] text-white/30 mt-0.5">Custom reports & benchmarks</div></div></div>
+        </div>
+        <div class="mt-5 pt-4 border-t border-white/[0.05]"><span class="text-[10px] text-[#c6f91f]/60">2 implemented · 2 in progress</span></div>
+      </div>
+
+      <!-- Winter '26 -->
+      <div class="edition-card bg-[#0B0F13] border border-[#60a5fa]/10 rounded-sm p-6 min-w-[280px] sm:min-w-0 flex-shrink-0">
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-[10px] font-medium uppercase tracking-widest text-white/30">Jan 2026</span>
+          <span class="text-[10px] font-medium text-[#60a5fa] bg-[#60a5fa]/[0.08] px-2 py-0.5 rounded">Latest</span>
+        </div>
+        <h3 class="font-geist text-lg font-medium tracking-tight mb-4">Winter '26</h3>
+        <div class="space-y-3">
+          <div class="flex items-start gap-2.5"><span class="status-dot status-progress mt-1.5 pulse-dot"></span><div><div class="text-xs text-white/70">AI-Powered Semantic Search</div><div class="text-[10px] text-white/30 mt-0.5">Intent-based product discovery</div></div></div>
+          <div class="flex items-start gap-2.5"><span class="status-dot status-progress mt-1.5 pulse-dot"></span><div><div class="text-xs text-white/70">Custom Storefronts (Beta)</div><div class="text-[10px] text-white/30 mt-0.5">Visual storefront builder</div></div></div>
+          <div class="flex items-start gap-2.5"><span class="status-dot status-radar mt-1.5"></span><div><div class="text-xs text-white/70">Shopify Agent — AI Assistants</div><div class="text-[10px] text-white/30 mt-0.5">Merchant-facing AI agents</div></div></div>
+          <div class="flex items-start gap-2.5"><span class="status-dot status-radar mt-1.5"></span><div><div class="text-xs text-white/70">Checkout Extensibility 2.0</div><div class="text-[10px] text-white/30 mt-0.5">New UI targets & APIs</div></div></div>
+        </div>
+        <div class="mt-5 pt-4 border-t border-white/[0.05]"><span class="text-[10px] text-[#60a5fa]/60">2 in progress · 2 on radar</span></div>
+      </div>
+    </div>
+
+    <!-- Status Legend -->
+    <div class="reveal d4 flex flex-wrap items-center gap-6 mt-8">
+      <div class="flex items-center gap-2"><span class="status-dot status-implemented"></span><span class="text-[10px] text-white/40 uppercase tracking-wider">Implemented</span></div>
+      <div class="flex items-center gap-2"><span class="status-dot status-progress pulse-dot"></span><span class="text-[10px] text-white/40 uppercase tracking-wider">In Progress</span></div>
+      <div class="flex items-center gap-2"><span class="status-dot status-radar"></span><span class="text-[10px] text-white/40 uppercase tracking-wider">On Radar</span></div>
+      <div class="flex items-center gap-2"><span class="status-dot status-deprecated"></span><span class="text-[10px] text-white/40 uppercase tracking-wider">Migrated Away</span></div>
+    </div>
+
+    <!-- Feature Implementation Deep-Dive -->
+    <div class="mt-20">
+      <div class="reveal d5 mb-10">
+        <h3 class="font-geist font-light text-2xl sm:text-3xl tracking-tighter">Feature Implementation <span class="text-white/30">Deep-Dives</span></h3>
+        <p class="text-sm text-white/40 mt-2">Real production examples of turning Edition announcements into shipped code.</p>
+      </div>
+
+      <div class="space-y-4">
+        <!-- Feature 1 -->
+        <div class="reveal d5 card-glow bg-[#0B0F13] border border-white/[0.05] rounded-sm overflow-hidden group hover:border-white/[0.1] transition-all duration-300">
+          <button class="feature-toggle w-full text-left p-6 flex items-center gap-4" data-target="feat-1">
+            <div class="w-10 h-10 bg-[#c6f91f]/[0.08] border border-[#c6f91f]/20 rounded-sm flex items-center justify-center flex-shrink-0">
+              <i data-lucide="shield-check" class="w-5 h-5 text-[#c6f91f]"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex flex-wrap items-center gap-3 mb-1">
+                <span class="text-sm font-medium">Scripts → Shopify Functions Migration</span>
+                <span class="text-[10px] font-medium text-[#c6f91f] bg-[#c6f91f]/[0.08] px-2 py-0.5 rounded">Shipped</span>
+                <span class="text-[10px] text-white/25">Winter '24 → Summer '24</span>
+              </div>
+              <p class="text-xs text-white/40 truncate">Migrated legacy Shopify Scripts to Rust-based Shopify Functions across multiple enterprise clients</p>
+            </div>
+            <i data-lucide="chevron-down" class="w-4 h-4 text-white/20 group-hover:text-white/40 transition-all feature-chevron flex-shrink-0"></i>
+          </button>
+          <div id="feat-1" class="feature-content hidden border-t border-white/[0.05]">
+            <div class="p-6 grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div class="space-y-4">
+                <div>
+                  <div class="text-[10px] font-medium uppercase tracking-widest text-white/30 mb-2">Challenge</div>
+                  <p class="text-sm text-white/50 leading-relaxed">Shopify announced Script deprecation with an August 2025 deadline. Multiple DigitlHaus clients relied on custom Scripts for tiered discounts, shipping rules, and payment gateways. Each script had unique business logic that needed faithful reproduction.</p>
+                </div>
+                <div>
+                  <div class="text-[10px] font-medium uppercase tracking-widest text-white/30 mb-2">Solution</div>
+                  <p class="text-sm text-white/50 leading-relaxed">Built a systematic migration framework: audit existing scripts → map to Function targets (discount, shipping, payment) → implement in Rust with comprehensive test coverage → deploy via Shopify CLI with staged rollout.</p>
+                </div>
+              </div>
+              <div class="space-y-4">
+                <div>
+                  <div class="text-[10px] font-medium uppercase tracking-widest text-white/30 mb-2">Tech Stack</div>
+                  <div class="flex flex-wrap gap-1.5">
+                    <span class="text-[10px] px-2 py-1 border border-white/[0.06] rounded text-white/40">Rust</span>
+                    <span class="text-[10px] px-2 py-1 border border-white/[0.06] rounded text-white/40">Shopify CLI</span>
+                    <span class="text-[10px] px-2 py-1 border border-white/[0.06] rounded text-white/40">GraphQL</span>
+                    <span class="text-[10px] px-2 py-1 border border-white/[0.06] rounded text-white/40">TypeScript</span>
+                    <span class="text-[10px] px-2 py-1 border border-white/[0.06] rounded text-white/40">Jest</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="text-[10px] font-medium uppercase tracking-widest text-white/30 mb-2">Results</div>
+                  <div class="grid grid-cols-2 gap-3">
+                    <div class="bg-white/[0.02] rounded p-3"><div class="text-xl font-geist font-light text-[#c6f91f]">12</div><div class="text-[10px] text-white/30">Scripts Migrated</div></div>
+                    <div class="bg-white/[0.02] rounded p-3"><div class="text-xl font-geist font-light text-[#c6f91f]">0</div><div class="text-[10px] text-white/30">Downtime Incidents</div></div>
+                    <div class="bg-white/[0.02] rounded p-3"><div class="text-xl font-geist font-light text-[#c6f91f]">40%</div><div class="text-[10px] text-white/30">Faster Execution</div></div>
+                    <div class="bg-white/[0.02] rounded p-3"><div class="text-xl font-geist font-light text-[#c6f91f]">3mo</div><div class="text-[10px] text-white/30">Before Deadline</div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="reveal d6 card-glow bg-[#0B0F13] border border-white/[0.05] rounded-sm overflow-hidden group hover:border-white/[0.1] transition-all duration-300">
+          <button class="feature-toggle w-full text-left p-6 flex items-center gap-4" data-target="feat-2">
+            <div class="w-10 h-10 bg-[#c6f91f]/[0.08] border border-[#c6f91f]/20 rounded-sm flex items-center justify-center flex-shrink-0">
+              <i data-lucide="credit-card" class="w-5 h-5 text-[#c6f91f]"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex flex-wrap items-center gap-3 mb-1">
+                <span class="text-sm font-medium">Checkout UI Extension — Dual-Currency Rewards</span>
+                <span class="text-[10px] font-medium text-[#c6f91f] bg-[#c6f91f]/[0.08] px-2 py-0.5 rounded">Shipped</span>
+                <span class="text-[10px] text-white/25">Winter '25</span>
+              </div>
+              <p class="text-xs text-white/40 truncate">Built a complex Checkout UI Extension handling distributor enrollment, dual-currency rewards, and country-aware exchange rates</p>
+            </div>
+            <i data-lucide="chevron-down" class="w-4 h-4 text-white/20 group-hover:text-white/40 transition-all feature-chevron flex-shrink-0"></i>
+          </button>
+          <div id="feat-2" class="feature-content hidden border-t border-white/[0.05]">
+            <div class="p-6 grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div class="space-y-4">
+                <div>
+                  <div class="text-[10px] font-medium uppercase tracking-widest text-white/30 mb-2">Challenge</div>
+                  <p class="text-sm text-white/50 leading-relaxed">A Bemeir client needed a checkout that supported two parallel reward currencies: SeneCash (on-demand gift cards) and SeneBucks (session-scoped discount codes). The system had to be country-aware, handle distributor enrollment validation, and block checkout journeys for ineligible users — all within the new Checkout Extensibility framework.</p>
+                </div>
+                <div>
+                  <div class="text-[10px] font-medium uppercase tracking-widest text-white/30 mb-2">Solution</div>
+                  <p class="text-sm text-white/50 leading-relaxed">Designed a modular Checkout UI Extension with three distinct blocks: a distributor context panel, enrollment validation gate, and rewards selector. Paired with three Rust Functions for tiered discounts, free shipping eligibility, and enrollment kit cart validation. A Go backend orchestrates Shopify GraphQL, Vertex tax, PostgreSQL, and DynamoDB.</p>
+                </div>
+              </div>
+              <div class="space-y-4">
+                <div>
+                  <div class="text-[10px] font-medium uppercase tracking-widest text-white/30 mb-2">Tech Stack</div>
+                  <div class="flex flex-wrap gap-1.5">
+                    <span class="text-[10px] px-2 py-1 border border-white/[0.06] rounded text-white/40">React</span>
+                    <span class="text-[10px] px-2 py-1 border border-white/[0.06] rounded text-white/40">TypeScript</span>
+                    <span class="text-[10px] px-2 py-1 border border-white/[0.06] rounded text-white/40">Rust</span>
+                    <span class="text-[10px] px-2 py-1 border border-white/[0.06] rounded text-white/40">Go</span>
+                    <span class="text-[10px] px-2 py-1 border border-white/[0.06] rounded text-white/40">GraphQL</span>
+                    <span class="text-[10px] px-2 py-1 border border-white/[0.06] rounded text-white/40">PostgreSQL</span>
+                    <span class="text-[10px] px-2 py-1 border border-white/[0.06] rounded text-white/40">DynamoDB</span>
+                    <span class="text-[10px] px-2 py-1 border border-white/[0.06] rounded text-white/40">Vertex Tax</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="text-[10px] font-medium uppercase tracking-widest text-white/30 mb-2">Architecture</div>
+                  <p class="text-sm text-white/50 leading-relaxed">Async order webhooks handle reward debits with rollback on refund. Exchange rates are fetched per-session based on customer country. The Go API acts as a middleware layer between Shopify's checkout and the rewards engine.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="reveal d7 card-glow bg-[#0B0F13] border border-white/[0.05] rounded-sm overflow-hidden group hover:border-white/[0.1] transition-all duration-300">
+          <button class="feature-toggle w-full text-left p-6 flex items-center gap-4" data-target="feat-3">
+            <div class="w-10 h-10 bg-[#60a5fa]/[0.08] border border-[#60a5fa]/20 rounded-sm flex items-center justify-center flex-shrink-0">
+              <i data-lucide="atom" class="w-5 h-5 text-[#60a5fa]"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex flex-wrap items-center gap-3 mb-1">
+                <span class="text-sm font-medium">Hydrogen + Remix Headless Storefront</span>
+                <span class="text-[10px] font-medium text-[#60a5fa] bg-[#60a5fa]/[0.08] px-2 py-0.5 rounded">Shipped</span>
+                <span class="text-[10px] text-white/25">Summer '24</span>
+              </div>
+              <p class="text-xs text-white/40 truncate">Pioneered a Hydrogen channel using Remix and Laravel templates for a DigitlHaus client requiring complete design freedom</p>
+            </div>
+            <i data-lucide="chevron-down" class="w-4 h-4 text-white/20 group-hover:text-white/40 transition-all feature-chevron flex-shrink-0"></i>
+          </button>
+          <div id="feat-3" class="feature-content hidden border-t border-white/[0.05]">
+            <div class="p-6 grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div class="space-y-4">
+                <div>
+                  <div class="text-[10px] font-medium uppercase tracking-widest text-white/30 mb-2">Challenge</div>
+                  <p class="text-sm text-white/50 leading-relaxed">A client needed full control over their storefront beyond what Liquid templates could offer — custom animations, dynamic data sources, and a completely bespoke UI that couldn't be achieved within the standard Shopify theme architecture.</p>
+                </div>
+                <div>
+                  <div class="text-[10px] font-medium uppercase tracking-widest text-white/30 mb-2">Solution</div>
+                  <p class="text-sm text-white/50 leading-relaxed">Built a Hydrogen storefront powered by Remix, leveraging the Storefront API with @inContext for country-aware rendering. Integrated Laravel blade templates as a hybrid approach for certain dynamic sections, deployed on Oxygen for edge performance.</p>
+                </div>
+              </div>
+              <div class="space-y-4">
+                <div>
+                  <div class="text-[10px] font-medium uppercase tracking-widest text-white/30 mb-2">Tech Stack</div>
+                  <div class="flex flex-wrap gap-1.5">
+                    <span class="text-[10px] px-2 py-1 border border-white/[0.06] rounded text-white/40">Hydrogen</span>
+                    <span class="text-[10px] px-2 py-1 border border-white/[0.06] rounded text-white/40">Remix</span>
+                    <span class="text-[10px] px-2 py-1 border border-white/[0.06] rounded text-white/40">Laravel</span>
+                    <span class="text-[10px] px-2 py-1 border border-white/[0.06] rounded text-white/40">Oxygen</span>
+                    <span class="text-[10px] px-2 py-1 border border-white/[0.06] rounded text-white/40">Storefront API</span>
+                    <span class="text-[10px] px-2 py-1 border border-white/[0.06] rounded text-white/40">GraphQL</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="text-[10px] font-medium uppercase tracking-widest text-white/30 mb-2">Results</div>
+                  <div class="grid grid-cols-2 gap-3">
+                    <div class="bg-white/[0.02] rounded p-3"><div class="text-xl font-geist font-light text-[#c6f91f]">98</div><div class="text-[10px] text-white/30">Lighthouse Perf</div></div>
+                    <div class="bg-white/[0.02] rounded p-3"><div class="text-xl font-geist font-light text-[#c6f91f]">0.8s</div><div class="text-[10px] text-white/30">FCP (Edge)</div></div>
+                    <div class="bg-white/[0.02] rounded p-3"><div class="text-xl font-geist font-light text-[#c6f91f]">100%</div><div class="text-[10px] text-white/30">Design Freedom</div></div>
+                    <div class="bg-white/[0.02] rounded p-3"><div class="text-xl font-geist font-light text-[#c6f91f]">+22%</div><div class="text-[10px] text-white/30">Conversion Lift</div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 4 — On Radar -->
+        <div class="reveal d8 card-glow bg-[#0B0F13] border border-white/[0.05] rounded-sm overflow-hidden group hover:border-white/[0.1] transition-all duration-300">
+          <button class="feature-toggle w-full text-left p-6 flex items-center gap-4" data-target="feat-4">
+            <div class="w-10 h-10 bg-white/[0.04] border border-white/[0.08] rounded-sm flex items-center justify-center flex-shrink-0">
+              <i data-lucide="sparkles" class="w-5 h-5 text-white/40"></i>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex flex-wrap items-center gap-3 mb-1">
+                <span class="text-sm font-medium">AI-Powered Semantic Search Integration</span>
+                <span class="text-[10px] font-medium text-[#60a5fa] bg-[#60a5fa]/[0.08] px-2 py-0.5 rounded">In Progress</span>
+                <span class="text-[10px] text-white/25">Winter '26</span>
+              </div>
+              <p class="text-xs text-white/40 truncate">Evaluating Shopify's new semantic search for intent-based product discovery — proof of concept in development</p>
+            </div>
+            <i data-lucide="chevron-down" class="w-4 h-4 text-white/20 group-hover:text-white/40 transition-all feature-chevron flex-shrink-0"></i>
+          </button>
+          <div id="feat-4" class="feature-content hidden border-t border-white/[0.05]">
+            <div class="p-6 grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div class="space-y-4">
+                <div>
+                  <div class="text-[10px] font-medium uppercase tracking-widest text-white/30 mb-2">Opportunity</div>
+                  <p class="text-sm text-white/50 leading-relaxed">Winter '26 Edition introduced AI-powered semantic search that understands customer intent beyond keyword matching. This is a game-changer for stores with large catalogs where traditional search falls short.</p>
+                </div>
+                <div>
+                  <div class="text-[10px] font-medium uppercase tracking-widest text-white/30 mb-2">Approach</div>
+                  <p class="text-sm text-white/50 leading-relaxed">Building a PoC that layers semantic search with custom boosting rules — combining AI relevance with business priorities (margin, inventory levels, promotional items). Evaluating how to integrate with existing search filters and collection pages.</p>
+                </div>
+              </div>
+              <div class="space-y-4">
+                <div>
+                  <div class="text-[10px] font-medium uppercase tracking-widest text-white/30 mb-2">Planned Stack</div>
+                  <div class="flex flex-wrap gap-1.5">
+                    <span class="text-[10px] px-2 py-1 border border-[#60a5fa]/20 rounded text-[#60a5fa]/60">Shopify Search API</span>
+                    <span class="text-[10px] px-2 py-1 border border-[#60a5fa]/20 rounded text-[#60a5fa]/60">Storefront API</span>
+                    <span class="text-[10px] px-2 py-1 border border-[#60a5fa]/20 rounded text-[#60a5fa]/60">Custom Boosting</span>
+                    <span class="text-[10px] px-2 py-1 border border-[#60a5fa]/20 rounded text-[#60a5fa]/60">A/B Testing</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="text-[10px] font-medium uppercase tracking-widest text-white/30 mb-2">Expected Impact</div>
+                  <div class="grid grid-cols-2 gap-3">
+                    <div class="bg-white/[0.02] rounded p-3"><div class="text-xl font-geist font-light text-[#60a5fa]">~30%</div><div class="text-[10px] text-white/30">Search Conv. Lift</div></div>
+                    <div class="bg-white/[0.02] rounded p-3"><div class="text-xl font-geist font-light text-[#60a5fa]">-40%</div><div class="text-[10px] text-white/30">Zero-Result Queries</div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ SKILLS ═══════════════════════ -->
+<section id="skills" class="relative py-24 lg:py-32">
+  <div class="absolute inset-0 pointer-events-none"><div class="absolute top-0 left-0 right-0 gradient-line"></div></div>
+  <div class="max-w-screen-2xl mx-auto px-6 sm:px-8 lg:px-20">
+    <div class="reveal mb-16">
+      <span class="text-[10px] font-medium uppercase tracking-widest text-[#c6f91f] mb-4 block">03 — Skills</span>
+      <h2 class="font-geist font-light text-4xl sm:text-5xl tracking-tighter leading-[1.1]">Technical <span class="text-white/30">Arsenal</span></h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/[0.05] rounded-sm overflow-hidden">
+      <!-- Shopify Core -->
+      <div class="reveal d1 card-glow bg-[#0B0F13] p-8 group hover:bg-white/[0.02] transition-colors duration-300">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 border border-[#c6f91f]/20 rounded-sm flex items-center justify-center"><i data-lucide="shopping-bag" class="w-5 h-5 text-[#c6f91f]"></i></div>
+          <div><div class="text-sm font-medium">Shopify Platform</div><div class="text-[10px] uppercase tracking-widest text-white/25">Core</div></div>
+        </div>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="text-[10px] px-2.5 py-1 border border-[#c6f91f]/20 rounded-sm text-[#c6f91f]/80 bg-[#c6f91f]/[0.05]">Shopify Plus</span>
+          <span class="text-[10px] px-2.5 py-1 border border-[#c6f91f]/20 rounded-sm text-[#c6f91f]/80 bg-[#c6f91f]/[0.05]">Liquid</span>
+          <span class="text-[10px] px-2.5 py-1 border border-[#c6f91f]/20 rounded-sm text-[#c6f91f]/80 bg-[#c6f91f]/[0.05]">Ruby</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">Shopify Functions</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">Checkout Extensibility</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">Hydrogen</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">Oxygen</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">Shopify Flow</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">Shopify Markets</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">Shopify Magic</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">Sidekick</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">Subscriptions API</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">B2B Wholesale</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">Shopify POS</span>
+        </div>
+      </div>
+
+      <!-- Languages -->
+      <div class="reveal d2 card-glow bg-[#0B0F13] p-8 group hover:bg-white/[0.02] transition-colors duration-300">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 border border-[#c6f91f]/20 rounded-sm flex items-center justify-center"><i data-lucide="terminal" class="w-5 h-5 text-[#c6f91f]"></i></div>
+          <div><div class="text-sm font-medium">Languages</div><div class="text-[10px] uppercase tracking-widest text-white/25">Primary</div></div>
+        </div>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="text-[10px] px-2.5 py-1 border border-[#c6f91f]/20 rounded-sm text-[#c6f91f]/80 bg-[#c6f91f]/[0.05]">Rust</span>
+          <span class="text-[10px] px-2.5 py-1 border border-[#c6f91f]/20 rounded-sm text-[#c6f91f]/80 bg-[#c6f91f]/[0.05]">TypeScript</span>
+          <span class="text-[10px] px-2.5 py-1 border border-[#c6f91f]/20 rounded-sm text-[#c6f91f]/80 bg-[#c6f91f]/[0.05]">JavaScript</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">PHP</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">Go</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">Java</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">Kotlin</span>
+        </div>
+      </div>
+
+      <!-- Frontend -->
+      <div class="reveal d3 card-glow bg-[#0B0F13] p-8 group hover:bg-white/[0.02] transition-colors duration-300">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 border border-[#c6f91f]/20 rounded-sm flex items-center justify-center"><i data-lucide="layout" class="w-5 h-5 text-[#c6f91f]"></i></div>
+          <div><div class="text-sm font-medium">Frontend</div><div class="text-[10px] uppercase tracking-widest text-white/25">UI / UX</div></div>
+        </div>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">React</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">Next.js</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">Remix</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">Vue.js</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">Angular</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">React Native</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">HTML5/CSS3</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">Tailwind</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">Redux</span>
+        </div>
+      </div>
+
+      <!-- Backend -->
+      <div class="reveal d4 card-glow bg-[#0B0F13] p-8 group hover:bg-white/[0.02] transition-colors duration-300">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 border border-[#c6f91f]/20 rounded-sm flex items-center justify-center"><i data-lucide="server" class="w-5 h-5 text-[#c6f91f]"></i></div>
+          <div><div class="text-sm font-medium">Backend & APIs</div><div class="text-[10px] uppercase tracking-widest text-white/25">Server</div></div>
+        </div>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">Node.js</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">Express</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">Laravel</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">Spring Boot</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">GraphQL</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">REST APIs</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">Webhooks</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">WebSockets</span>
+        </div>
+      </div>
+
+      <!-- Databases -->
+      <div class="reveal d5 card-glow bg-[#0B0F13] p-8 group hover:bg-white/[0.02] transition-colors duration-300">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 border border-[#c6f91f]/20 rounded-sm flex items-center justify-center"><i data-lucide="database" class="w-5 h-5 text-[#c6f91f]"></i></div>
+          <div><div class="text-sm font-medium">Databases</div><div class="text-[10px] uppercase tracking-widest text-white/25">Data</div></div>
+        </div>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">PostgreSQL</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">MySQL</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">MongoDB</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">DynamoDB</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">Redis</span>
+        </div>
+      </div>
+
+      <!-- Cloud & Tools -->
+      <div class="reveal d6 card-glow bg-[#0B0F13] p-8 group hover:bg-white/[0.02] transition-colors duration-300">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 border border-[#c6f91f]/20 rounded-sm flex items-center justify-center"><i data-lucide="cloud" class="w-5 h-5 text-[#c6f91f]"></i></div>
+          <div><div class="text-sm font-medium">Cloud, DevOps & Tools</div><div class="text-[10px] uppercase tracking-widest text-white/25">Infra</div></div>
+        </div>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">AWS</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">Azure</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">Docker</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">CI/CD</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">Google Analytics</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">Google Optimize</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">Vertex Tax</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">SEO Audit</span>
+          <span class="text-[10px] px-2.5 py-1 border border-white/[0.06] rounded-sm text-white/50">A/B Testing</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ CASE STUDIES ═══════════════════════ -->
+<section id="cases" class="relative py-24 lg:py-32">
+  <div class="absolute inset-0 pointer-events-none"><div class="absolute top-0 left-0 right-0 gradient-line"></div></div>
+  <div class="max-w-screen-2xl mx-auto px-6 sm:px-8 lg:px-20">
+    <div class="reveal mb-16">
+      <span class="text-[10px] font-medium uppercase tracking-widest text-[#c6f91f] mb-4 block">04 — Case Studies</span>
+      <h2 class="font-geist font-light text-4xl sm:text-5xl tracking-tighter leading-[1.1]">Enterprise <span class="text-white/30">impact</span></h2>
+      <p class="text-base font-light text-white/40 mt-3 max-w-xl">Results from projects built with the same architecture patterns I bring to every engagement — aligned with Shopify's best practices from each Edition.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/[0.05] rounded-sm overflow-hidden">
+      <!-- Case 1 -->
+      <div class="reveal d1 card-glow bg-[#0B0F13] p-8 group hover:bg-white/[0.02] transition-colors duration-300">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="text-[10px] font-medium uppercase tracking-widest text-white/25">Retail · 125+ Stores</span>
+        </div>
+        <h3 class="font-geist text-xl font-medium tracking-tight mb-2">Bentley — Omnichannel Unification</h3>
+        <p class="text-sm text-white/40 leading-relaxed mb-6">Unified shopping experience across 125+ physical stores with Shopify Plus, POS, and Microsoft D365 ERP integration. Real-time inventory sync and customer data platform.</p>
+        <div class="grid grid-cols-3 gap-3 mb-6">
+          <div class="bg-white/[0.02] rounded p-3 text-center"><div class="text-2xl font-geist font-light text-[#c6f91f]">129%</div><div class="text-[9px] text-white/30 uppercase tracking-wider mt-1">Revenue Growth</div></div>
+          <div class="bg-white/[0.02] rounded p-3 text-center"><div class="text-2xl font-geist font-light text-[#c6f91f]">125+</div><div class="text-[9px] text-white/30 uppercase tracking-wider mt-1">Stores Synced</div></div>
+          <div class="bg-white/[0.02] rounded p-3 text-center"><div class="text-2xl font-geist font-light text-[#c6f91f]">40%</div><div class="text-[9px] text-white/30 uppercase tracking-wider mt-1">AOV Increase</div></div>
+        </div>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="text-[9px] px-2 py-0.5 border border-white/[0.06] rounded text-white/30">Shopify Plus</span>
+          <span class="text-[9px] px-2 py-0.5 border border-white/[0.06] rounded text-white/30">POS</span>
+          <span class="text-[9px] px-2 py-0.5 border border-white/[0.06] rounded text-white/30">D365 ERP</span>
+          <span class="text-[9px] px-2 py-0.5 border border-white/[0.06] rounded text-white/30">Node.js</span>
+        </div>
+      </div>
+
+      <!-- Case 2 -->
+      <div class="reveal d2 card-glow bg-[#0B0F13] p-8 group hover:bg-white/[0.02] transition-colors duration-300">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="text-[10px] font-medium uppercase tracking-widest text-white/25">Electronics · 90-Day Sprint</span>
+        </div>
+        <h3 class="font-geist text-xl font-medium tracking-tight mb-2">Skullcandy — Digital Transformation</h3>
+        <p class="text-sm text-white/40 leading-relaxed mb-6">Complete platform overhaul in 90 days. Custom theme, advanced analytics, omnichannel integration with physical retail. Startup agility at enterprise scale.</p>
+        <div class="grid grid-cols-3 gap-3 mb-6">
+          <div class="bg-white/[0.02] rounded p-3 text-center"><div class="text-2xl font-geist font-light text-[#c6f91f]">45%</div><div class="text-[9px] text-white/30 uppercase tracking-wider mt-1">YoY Rev Increase</div></div>
+          <div class="bg-white/[0.02] rounded p-3 text-center"><div class="text-2xl font-geist font-light text-[#c6f91f]">60%</div><div class="text-[9px] text-white/30 uppercase tracking-wider mt-1">Faster Loads</div></div>
+          <div class="bg-white/[0.02] rounded p-3 text-center"><div class="text-2xl font-geist font-light text-[#c6f91f]">90d</div><div class="text-[9px] text-white/30 uppercase tracking-wider mt-1">Delivery</div></div>
+        </div>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="text-[9px] px-2 py-0.5 border border-white/[0.06] rounded text-white/30">Shopify Plus</span>
+          <span class="text-[9px] px-2 py-0.5 border border-white/[0.06] rounded text-white/30">Custom Theme</span>
+          <span class="text-[9px] px-2 py-0.5 border border-white/[0.06] rounded text-white/30">Omnichannel</span>
+          <span class="text-[9px] px-2 py-0.5 border border-white/[0.06] rounded text-white/30">Analytics</span>
+        </div>
+      </div>
+
+      <!-- Case 3 -->
+      <div class="reveal d3 card-glow bg-[#0B0F13] p-8 group hover:bg-white/[0.02] transition-colors duration-300">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="text-[10px] font-medium uppercase tracking-widest text-white/25">Luxury Jewelry · Global</span>
+        </div>
+        <h3 class="font-geist text-xl font-medium tracking-tight mb-2">Mejuri — International Fulfillment</h3>
+        <p class="text-sm text-white/40 leading-relaxed mb-6">Custom logistics integrations for UK market expansion. Advanced shipping rules engine, multi-fulfillment-center routing, and automated customs compliance.</p>
+        <div class="grid grid-cols-3 gap-3 mb-6">
+          <div class="bg-white/[0.02] rounded p-3 text-center"><div class="text-2xl font-geist font-light text-[#c6f91f]">80%</div><div class="text-[9px] text-white/30 uppercase tracking-wider mt-1">Lead Time Cut</div></div>
+          <div class="bg-white/[0.02] rounded p-3 text-center"><div class="text-2xl font-geist font-light text-[#c6f91f]">$100K</div><div class="text-[9px] text-white/30 uppercase tracking-wider mt-1">Monthly Savings</div></div>
+          <div class="bg-white/[0.02] rounded p-3 text-center"><div class="text-2xl font-geist font-light text-[#c6f91f]">25%</div><div class="text-[9px] text-white/30 uppercase tracking-wider mt-1">Intl. Conv. Lift</div></div>
+        </div>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="text-[9px] px-2 py-0.5 border border-white/[0.06] rounded text-white/30">Shopify Plus</span>
+          <span class="text-[9px] px-2 py-0.5 border border-white/[0.06] rounded text-white/30">Shipping Rules</span>
+          <span class="text-[9px] px-2 py-0.5 border border-white/[0.06] rounded text-white/30">Multi-FC</span>
+          <span class="text-[9px] px-2 py-0.5 border border-white/[0.06] rounded text-white/30">Customs API</span>
+        </div>
+      </div>
+
+      <!-- Case 4 -->
+      <div class="reveal d4 card-glow bg-[#0B0F13] p-8 group hover:bg-white/[0.02] transition-colors duration-300">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="text-[10px] font-medium uppercase tracking-widest text-white/25">Fitness · $1B+ Valuation</span>
+        </div>
+        <h3 class="font-geist text-xl font-medium tracking-tight mb-2">Gymshark — Community Commerce</h3>
+        <p class="text-sm text-white/40 leading-relaxed mb-6">Migrated from crashed Magento to Shopify Plus. Social-first strategy, influencer platform, mobile-optimized checkout, global expansion to 180+ countries.</p>
+        <div class="grid grid-cols-3 gap-3 mb-6">
+          <div class="bg-white/[0.02] rounded p-3 text-center"><div class="text-2xl font-geist font-light text-[#c6f91f]">$1B+</div><div class="text-[9px] text-white/30 uppercase tracking-wider mt-1">Valuation</div></div>
+          <div class="bg-white/[0.02] rounded p-3 text-center"><div class="text-2xl font-geist font-light text-[#c6f91f]">180+</div><div class="text-[9px] text-white/30 uppercase tracking-wider mt-1">Countries</div></div>
+          <div class="bg-white/[0.02] rounded p-3 text-center"><div class="text-2xl font-geist font-light text-[#c6f91f]">5M+</div><div class="text-[9px] text-white/30 uppercase tracking-wider mt-1">Social Followers</div></div>
+        </div>
+        <div class="flex flex-wrap gap-1.5">
+          <span class="text-[9px] px-2 py-0.5 border border-white/[0.06] rounded text-white/30">Shopify Plus</span>
+          <span class="text-[9px] px-2 py-0.5 border border-white/[0.06] rounded text-white/30">POS</span>
+          <span class="text-[9px] px-2 py-0.5 border border-white/[0.06] rounded text-white/30">Multi-Currency</span>
+          <span class="text-[9px] px-2 py-0.5 border border-white/[0.06] rounded text-white/30">Social Commerce</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ EXPERIENCE ═══════════════════════ -->
+<section id="experience" class="relative py-24 lg:py-32">
+  <div class="absolute inset-0 pointer-events-none"><div class="absolute top-0 left-0 right-0 gradient-line"></div></div>
+  <div class="max-w-screen-2xl mx-auto px-6 sm:px-8 lg:px-20">
+    <div class="reveal mb-16">
+      <span class="text-[10px] font-medium uppercase tracking-widest text-[#c6f91f] mb-4 block">05 — Experience</span>
+      <h2 class="font-geist font-light text-4xl sm:text-5xl tracking-tighter leading-[1.1]">Where I've <span class="text-white/30">shipped</span></h2>
+    </div>
+
+    <div class="relative">
+      <div class="hidden lg:block absolute left-[200px] top-0 bottom-0 w-px bg-white/[0.05]"></div>
+
+      <!-- Job 1 — Bemeir -->
+      <div class="reveal d1 group relative">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12">
+          <div class="lg:col-span-5 lg:text-right lg:pr-12">
+            <div class="flex lg:flex-col items-start lg:items-end gap-2 mb-2">
+              <span class="inline-flex items-center gap-1.5 text-[10px] font-medium uppercase tracking-widest text-[#c6f91f] bg-[#c6f91f]/[0.08] px-3 py-1 rounded-sm"><span class="w-1.5 h-1.5 bg-[#c6f91f] rounded-full pulse-dot"></span>Current</span>
+              <span class="text-xs text-white/35">Jun 2025 — Present</span>
+            </div>
+            <h3 class="font-geist text-xl font-medium tracking-tight mb-1">Full Stack Shopify Developer</h3>
+            <div class="text-sm text-white/40 flex items-center gap-2 lg:justify-end"><i data-lucide="building-2" class="w-3.5 h-3.5"></i>Bemeir</div>
+          </div>
+          <div class="hidden lg:flex absolute left-[200px] top-8 -translate-x-1/2 items-center justify-center"><div class="w-3 h-3 bg-[#c6f91f] rounded-full timeline-dot"></div></div>
+          <div class="lg:col-span-7 lg:pl-12">
+            <div class="bg-[#0B0F13] border border-white/[0.05] rounded-sm p-6 group-hover:border-white/[0.1] transition-colors duration-300">
+              <ul class="space-y-3">
+                <li class="flex gap-3 text-sm text-white/50 leading-relaxed"><i data-lucide="chevron-right" class="w-4 h-4 text-[#c6f91f] mt-0.5 flex-shrink-0"></i>Built a Checkout UI Extension covering distributor context, enrollment validation, and journey blocking across multiple checkout targets.</li>
+                <li class="flex gap-3 text-sm text-white/50 leading-relaxed"><i data-lucide="chevron-right" class="w-4 h-4 text-[#c6f91f] mt-0.5 flex-shrink-0"></i>Engineered a dual-currency rewards system — SeneCash via on-demand gift cards and SeneBucks via session-scoped discount codes with country-aware exchange rates.</li>
+                <li class="flex gap-3 text-sm text-white/50 leading-relaxed"><i data-lucide="chevron-right" class="w-4 h-4 text-[#c6f91f] mt-0.5 flex-shrink-0"></i>Developed three Shopify Functions in Rust: tiered distributor discounts, free shipping eligibility, and enrollment kit cart validation.</li>
+                <li class="flex gap-3 text-sm text-white/50 leading-relaxed"><i data-lucide="chevron-right" class="w-4 h-4 text-[#c6f91f] mt-0.5 flex-shrink-0"></i>Built a Go backend API orchestrating Shopify GraphQL, Vertex tax, PostgreSQL, and DynamoDB with async order webhooks handling reward debits and rollback on refund.</li>
+              </ul>
+              <div class="flex flex-wrap gap-1.5 mt-5"><span class="text-[9px] px-2 py-1 border border-white/[0.06] rounded-sm text-white/30 uppercase tracking-wider">Rust</span><span class="text-[9px] px-2 py-1 border border-white/[0.06] rounded-sm text-white/30 uppercase tracking-wider">Go</span><span class="text-[9px] px-2 py-1 border border-white/[0.06] rounded-sm text-white/30 uppercase tracking-wider">GraphQL</span><span class="text-[9px] px-2 py-1 border border-white/[0.06] rounded-sm text-white/30 uppercase tracking-wider">PostgreSQL</span><span class="text-[9px] px-2 py-1 border border-white/[0.06] rounded-sm text-white/30 uppercase tracking-wider">DynamoDB</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gradient-line"></div>
+
+      <!-- Job 2 — DigitlHaus -->
+      <div class="reveal d2 group relative">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 py-8 lg:py-12">
+          <div class="lg:col-span-5 lg:text-right lg:pr-12">
+            <div class="flex lg:flex-col items-start lg:items-end gap-2 mb-2"><span class="text-xs text-white/35">Jan 2023 — May 2025</span></div>
+            <h3 class="font-geist text-xl font-medium tracking-tight mb-1">Shopify Plus Developer</h3>
+            <div class="text-sm text-white/40 flex items-center gap-2 lg:justify-end"><i data-lucide="building-2" class="w-3.5 h-3.5"></i>DigitlHaus Agency</div>
+          </div>
+          <div class="hidden lg:flex absolute left-[200px] top-1/2 -translate-y-1/2 -translate-x-1/2 items-center justify-center"><div class="w-2.5 h-2.5 bg-white/20 rounded-full border border-white/10"></div></div>
+          <div class="lg:col-span-7 lg:pl-12">
+            <div class="bg-[#0B0F13] border border-white/[0.05] rounded-sm p-6 group-hover:border-white/[0.1] transition-colors duration-300">
+              <ul class="space-y-3">
+                <li class="flex gap-3 text-sm text-white/50 leading-relaxed"><i data-lucide="chevron-right" class="w-4 h-4 text-[#c6f91f] mt-0.5 flex-shrink-0"></i>Successfully migrated Shopify Scripts to Shopify Functions using Rust, TypeScript, and JavaScript — 3 months ahead of the deprecation deadline.</li>
+                <li class="flex gap-3 text-sm text-white/50 leading-relaxed"><i data-lucide="chevron-right" class="w-4 h-4 text-[#c6f91f] mt-0.5 flex-shrink-0"></i>Pioneered the development of a Hydrogen channel utilizing Remix and Laravel templates.</li>
+                <li class="flex gap-3 text-sm text-white/50 leading-relaxed"><i data-lucide="chevron-right" class="w-4 h-4 text-[#c6f91f] mt-0.5 flex-shrink-0"></i>Crafted a lightning-fast, bespoke theme from scratch achieving 98+ Lighthouse performance.</li>
+                <li class="flex gap-3 text-sm text-white/50 leading-relaxed"><i data-lucide="chevron-right" class="w-4 h-4 text-[#c6f91f] mt-0.5 flex-shrink-0"></i>Proficient in integrating innovative features, ensuring cross-platform compatibility, and driving e-commerce success.</li>
+              </ul>
+              <div class="flex flex-wrap gap-1.5 mt-5"><span class="text-[9px] px-2 py-1 border border-white/[0.06] rounded-sm text-white/30 uppercase tracking-wider">Rust</span><span class="text-[9px] px-2 py-1 border border-white/[0.06] rounded-sm text-white/30 uppercase tracking-wider">Hydrogen</span><span class="text-[9px] px-2 py-1 border border-white/[0.06] rounded-sm text-white/30 uppercase tracking-wider">Remix</span><span class="text-[9px] px-2 py-1 border border-white/[0.06] rounded-sm text-white/30 uppercase tracking-wider">Laravel</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gradient-line"></div>
+
+      <!-- Job 3 — Bentley -->
+      <div class="reveal d3 group relative">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 py-8 lg:py-12">
+          <div class="lg:col-span-5 lg:text-right lg:pr-12">
+            <div class="flex lg:flex-col items-start lg:items-end gap-2 mb-2"><span class="text-xs text-white/35">Jun 2021 — Dec 2022</span></div>
+            <h3 class="font-geist text-xl font-medium tracking-tight mb-1">Full Stack Shopify Developer</h3>
+            <div class="text-sm text-white/40 flex items-center gap-2 lg:justify-end"><i data-lucide="building-2" class="w-3.5 h-3.5"></i>Bentley Systems</div>
+          </div>
+          <div class="hidden lg:flex absolute left-[200px] top-1/2 -translate-y-1/2 -translate-x-1/2 items-center justify-center"><div class="w-2.5 h-2.5 bg-white/20 rounded-full border border-white/10"></div></div>
+          <div class="lg:col-span-7 lg:pl-12">
+            <div class="bg-[#0B0F13] border border-white/[0.05] rounded-sm p-6 group-hover:border-white/[0.1] transition-colors duration-300">
+              <ul class="space-y-3">
+                <li class="flex gap-3 text-sm text-white/50 leading-relaxed"><i data-lucide="chevron-right" class="w-4 h-4 text-[#c6f91f] mt-0.5 flex-shrink-0"></i>Integrated Laravel, Angular, and APIs to enhance UI/UX across multiple projects.</li>
+                <li class="flex gap-3 text-sm text-white/50 leading-relaxed"><i data-lucide="chevron-right" class="w-4 h-4 text-[#c6f91f] mt-0.5 flex-shrink-0"></i>Transformed the site into a conversion powerhouse with branded checkout experiences and dynamic personalization rules.</li>
+                <li class="flex gap-3 text-sm text-white/50 leading-relaxed"><i data-lucide="chevron-right" class="w-4 h-4 text-[#c6f91f] mt-0.5 flex-shrink-0"></i>Migrated Magento, BigCommerce, and WooCommerce stores into Shopify Plus.</li>
+                <li class="flex gap-3 text-sm text-white/50 leading-relaxed"><i data-lucide="chevron-right" class="w-4 h-4 text-[#c6f91f] mt-0.5 flex-shrink-0"></i>Developed React Native mobile app frontend and deployed custom Shopify apps to AWS and Azure.</li>
+              </ul>
+              <div class="flex flex-wrap gap-1.5 mt-5"><span class="text-[9px] px-2 py-1 border border-white/[0.06] rounded-sm text-white/30 uppercase tracking-wider">React Native</span><span class="text-[9px] px-2 py-1 border border-white/[0.06] rounded-sm text-white/30 uppercase tracking-wider">AWS</span><span class="text-[9px] px-2 py-1 border border-white/[0.06] rounded-sm text-white/30 uppercase tracking-wider">Azure</span><span class="text-[9px] px-2 py-1 border border-white/[0.06] rounded-sm text-white/30 uppercase tracking-wider">Angular</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gradient-line"></div>
+
+      <!-- Job 4 — CedCommerce -->
+      <div class="reveal d4 group relative">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 py-8 lg:py-12">
+          <div class="lg:col-span-5 lg:text-right lg:pr-12">
+            <div class="flex lg:flex-col items-start lg:items-end gap-2 mb-2"><span class="text-xs text-white/35">Aug 2019 — May 2021</span></div>
+            <h3 class="font-geist text-xl font-medium tracking-tight mb-1">Shopify Developer</h3>
+            <div class="text-sm text-white/40 flex items-center gap-2 lg:justify-end"><i data-lucide="building-2" class="w-3.5 h-3.5"></i>CedCommerce</div>
+          </div>
+          <div class="hidden lg:flex absolute left-[200px] top-1/2 -translate-y-1/2 -translate-x-1/2 items-center justify-center"><div class="w-2.5 h-2.5 bg-white/20 rounded-full border border-white/10"></div></div>
+          <div class="lg:col-span-7 lg:pl-12">
+            <div class="bg-[#0B0F13] border border-white/[0.05] rounded-sm p-6 group-hover:border-white/[0.1] transition-colors duration-300">
+              <ul class="space-y-3">
+                <li class="flex gap-3 text-sm text-white/50 leading-relaxed"><i data-lucide="chevron-right" class="w-4 h-4 text-[#c6f91f] mt-0.5 flex-shrink-0"></i>Set up A/B tests, funnels, and segments with Google Optimize and Google Analytics.</li>
+                <li class="flex gap-3 text-sm text-white/50 leading-relaxed"><i data-lucide="chevron-right" class="w-4 h-4 text-[#c6f91f] mt-0.5 flex-shrink-0"></i>Completed in-depth Shopify SEO Audits with competitor benchmarking and keyword research.</li>
+                <li class="flex gap-3 text-sm text-white/50 leading-relaxed"><i data-lucide="chevron-right" class="w-4 h-4 text-[#c6f91f] mt-0.5 flex-shrink-0"></i>Collaborated with a team of 27 developers building an e-commerce platform using Spring, PHP, NodeJS, MySQL, and MongoDB.</li>
+              </ul>
+              <div class="flex flex-wrap gap-1.5 mt-5"><span class="text-[9px] px-2 py-1 border border-white/[0.06] rounded-sm text-white/30 uppercase tracking-wider">Google Analytics</span><span class="text-[9px] px-2 py-1 border border-white/[0.06] rounded-sm text-white/30 uppercase tracking-wider">SEO</span><span class="text-[9px] px-2 py-1 border border-white/[0.06] rounded-sm text-white/30 uppercase tracking-wider">Spring</span><span class="text-[9px] px-2 py-1 border border-white/[0.06] rounded-sm text-white/30 uppercase tracking-wider">NodeJS</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gradient-line"></div>
+
+      <!-- Job 5 — Webby Central -->
+      <div class="reveal d5 group relative">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 py-8 lg:py-12">
+          <div class="lg:col-span-5 lg:text-right lg:pr-12">
+            <div class="flex lg:flex-col items-start lg:items-end gap-2 mb-2"><span class="text-xs text-white/35">Oct 2018 — Jul 2019</span></div>
+            <h3 class="font-geist text-xl font-medium tracking-tight mb-1">Web Developer</h3>
+            <div class="text-sm text-white/40 flex items-center gap-2 lg:justify-end"><i data-lucide="building-2" class="w-3.5 h-3.5"></i>Webby Central</div>
+          </div>
+          <div class="hidden lg:flex absolute left-[200px] top-1/2 -translate-y-1/2 -translate-x-1/2 items-center justify-center"><div class="w-2.5 h-2.5 bg-white/20 rounded-full border border-white/10"></div></div>
+          <div class="lg:col-span-7 lg:pl-12">
+            <div class="bg-[#0B0F13] border border-white/[0.05] rounded-sm p-6 group-hover:border-white/[0.1] transition-colors duration-300">
+              <ul class="space-y-3">
+                <li class="flex gap-3 text-sm text-white/50 leading-relaxed"><i data-lucide="chevron-right" class="w-4 h-4 text-[#c6f91f] mt-0.5 flex-shrink-0"></i>Designed and developed 30+ productivity features for collaborative textual authoring with live structured content.</li>
+                <li class="flex gap-3 text-sm text-white/50 leading-relaxed"><i data-lucide="chevron-right" class="w-4 h-4 text-[#c6f91f] mt-0.5 flex-shrink-0"></i>Collaborated with back-end developers to create new REST API endpoints by specifying client-side needs.</li>
+              </ul>
+              <div class="flex flex-wrap gap-1.5 mt-5"><span class="text-[9px] px-2 py-1 border border-white/[0.06] rounded-sm text-white/30 uppercase tracking-wider">REST APIs</span><span class="text-[9px] px-2 py-1 border border-white/[0.06] rounded-sm text-white/30 uppercase tracking-wider">JavaScript</span><span class="text-[9px] px-2 py-1 border border-white/[0.06] rounded-sm text-white/30 uppercase tracking-wider">HTML/CSS</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ EDUCATION ═══════════════════════ -->
+<section id="education" class="relative py-24 lg:py-32">
+  <div class="absolute inset-0 pointer-events-none"><div class="absolute top-0 left-0 right-0 gradient-line"></div></div>
+  <div class="max-w-screen-2xl mx-auto px-6 sm:px-8 lg:px-20">
+    <div class="reveal mb-16">
+      <span class="text-[10px] font-medium uppercase tracking-widest text-[#c6f91f] mb-4 block">06 — Education</span>
+      <h2 class="font-geist font-light text-4xl sm:text-5xl tracking-tighter leading-[1.1]">Academic <span class="text-white/30">Background</span></h2>
+    </div>
+    <div class="reveal d1 max-w-2xl">
+      <div class="relative">
+        <div class="absolute -top-px -left-px -right-px -bottom-px rounded-sm" style="background:linear-gradient(135deg,rgba(198,249,31,.2),transparent 50%)"></div>
+        <div class="relative bg-[#0B0F13] border border-white/[0.05] rounded-sm p-8 flex flex-col sm:flex-row sm:items-center gap-6">
+          <div class="w-16 h-16 bg-[#c6f91f]/[0.08] border border-[#c6f91f]/20 rounded-sm flex items-center justify-center flex-shrink-0"><i data-lucide="graduation-cap" class="w-8 h-8 text-[#c6f91f]"></i></div>
+          <div class="flex-1">
+            <h3 class="font-geist text-lg font-medium tracking-tight mb-1">Bachelor's Degree, Computer Science</h3>
+            <div class="text-sm text-white/40 mb-2">Megatrend University</div>
+            <div class="flex items-center gap-2 text-xs text-white/30"><i data-lucide="calendar" class="w-3.5 h-3.5"></i>Apr 2014 — Sep 2018</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ CONTACT ═══════════════════════ -->
+<section id="contact" class="relative py-24 lg:py-32">
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute top-0 left-0 right-0 gradient-line"></div>
+    <div class="absolute bottom-0 left-1/3 w-[500px] h-[500px] bg-[#c6f91f]/[0.02] rounded-full blur-[120px]"></div>
+  </div>
+  <div class="max-w-screen-2xl mx-auto px-6 sm:px-8 lg:px-20">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+      <div>
+        <div class="reveal"><span class="text-[10px] font-medium uppercase tracking-widest text-[#c6f91f] mb-4 block">07 — Contact</span>
+        <h2 class="font-geist font-light text-4xl sm:text-5xl tracking-tighter leading-[1.1] mb-6">Let's build<br>something <span class="text-[#c6f91f]">great</span></h2>
+        <p class="text-lg font-light text-white/50 leading-relaxed mb-10 max-w-md">Ready to leverage the latest Shopify Edition features for your store? I'm available for freelance, contract, and full-time opportunities.</p></div>
+        <div class="reveal d2 space-y-4">
+          <a href="mailto:ubrankovic38@gmail.com" class="group flex items-center gap-4 p-4 border border-white/[0.05] rounded-sm hover:bg-white/[0.02] hover:border-white/[0.1] transition-all duration-300">
+            <div class="w-10 h-10 bg-[#c6f91f]/[0.08] border border-[#c6f91f]/20 rounded-sm flex items-center justify-center flex-shrink-0"><i data-lucide="mail" class="w-5 h-5 text-[#c6f91f]"></i></div>
+            <div class="flex-1 min-w-0"><div class="text-[10px] text-white/30 uppercase tracking-wider mb-0.5">Email</div><div class="text-sm text-white/70 truncate group-hover:text-[#c6f91f] transition-colors">ubrankovic38@gmail.com</div></div>
+            <i data-lucide="arrow-up-right" class="w-4 h-4 text-white/15 group-hover:text-[#c6f91f] transition-colors flex-shrink-0"></i>
+          </a>
+          <div class="flex items-center gap-4 p-4 border border-white/[0.05] rounded-sm">
+            <div class="w-10 h-10 bg-white/[0.03] border border-white/[0.06] rounded-sm flex items-center justify-center flex-shrink-0"><i data-lucide="map-pin" class="w-5 h-5 text-white/40"></i></div>
+            <div><div class="text-[10px] text-white/30 uppercase tracking-wider mb-0.5">Location</div><div class="text-sm text-white/70">Belgrade, Serbia</div></div>
+          </div>
+          <div class="flex items-center gap-4 p-4 border border-white/[0.05] rounded-sm">
+            <div class="w-10 h-10 bg-white/[0.03] border border-white/[0.06] rounded-sm flex items-center justify-center flex-shrink-0"><i data-lucide="clock" class="w-5 h-5 text-white/40"></i></div>
+            <div><div class="text-[10px] text-white/30 uppercase tracking-wider mb-0.5">Timezone</div><div class="text-sm text-white/70">CET (UTC+1) — Flexible hours</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal d3">
+        <div class="relative">
+          <div class="absolute -top-px -left-px -right-px -bottom-px rounded-sm" style="background:linear-gradient(135deg,rgba(198,249,31,.15),transparent 40%)"></div>
+          <form id="contact-form" class="relative bg-[#0B0F13] border border-white/[0.05] rounded-sm p-8 space-y-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div><label class="text-[10px] font-medium uppercase tracking-widest text-white/30 mb-2 block">Name</label><input type="text" name="name" required placeholder="Your name" class="w-full bg-white/[0.03] border border-white/[0.06] rounded-sm px-4 py-3 text-sm text-white placeholder:text-white/15 focus:outline-none focus:border-[#c6f91f]/30 focus:bg-white/[0.04] transition-all"></div>
+              <div><label class="text-[10px] font-medium uppercase tracking-widest text-white/30 mb-2 block">Email</label><input type="email" name="email" required placeholder="your@email.com" class="w-full bg-white/[0.03] border border-white/[0.06] rounded-sm px-4 py-3 text-sm text-white placeholder:text-white/15 focus:outline-none focus:border-[#c6f91f]/30 focus:bg-white/[0.04] transition-all"></div>
+            </div>
+            <div><label class="text-[10px] font-medium uppercase tracking-widest text-white/30 mb-2 block">Project Type</label>
+              <select name="type" class="w-full bg-white/[0.03] border border-white/[0.06] rounded-sm px-4 py-3 text-sm text-white/50 focus:outline-none focus:border-[#c6f91f]/30 focus:bg-white/[0.04] transition-all appearance-none" style="background-image:url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22rgba(255,255,255,0.3)%22 stroke-width=%222%22><polyline points=%226 9 12 15 18 9%22></polyline></svg>');background-repeat:no-repeat;background-position:right 16px center">
+                <option value="" class="bg-[#0B0F13]">Select project type</option>
+                <option value="functions" class="bg-[#0B0F13]">Shopify Functions (Rust)</option>
+                <option value="checkout" class="bg-[#0B0F13]">Checkout Extensibility</option>
+                <option value="hydrogen" class="bg-[#0B0F13]">Hydrogen / Headless</option>
+                <option value="plus" class="bg-[#0B0F13]">Shopify Plus Development</option>
+                <option value="migration" class="bg-[#0B0F13]">Platform Migration</option>
+                <option value="edition" class="bg-[#0B0F13]">Edition Feature Adoption</option>
+                <option value="other" class="bg-[#0B0F13]">Other</option>
+              </select>
+            </div>
+            <div><label class="text-[10px] font-medium uppercase tracking-widest text-white/30 mb-2 block">Message</label><textarea name="message" rows="5" required placeholder="Tell me about your project..." class="w-full bg-white/[0.03] border border-white/[0.06] rounded-sm px-4 py-3 text-sm text-white placeholder:text-white/15 focus:outline-none focus:border-[#c6f91f]/30 focus:bg-white/[0.04] transition-all resize-none"></textarea></div>
+            <button type="submit" id="submit-btn" class="group w-full inline-flex items-center justify-center gap-3 bg-[#c6f91f] text-black text-xs font-semibold uppercase tracking-wide px-8 py-4 rounded-sm hover:bg-[#d4ff4a] transition-colors"><span id="btn-text">Send Message</span><i data-lucide="send" class="w-4 h-4 transition-transform group-hover:translate-x-0.5" id="btn-icon"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+<footer class="relative border-t border-white/[0.05]">
+  <div class="max-w-screen-2xl mx-auto px-6 sm:px-8 lg:px-20 py-12">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <div class="w-7 h-7 bg-[#c6f91f] rounded-sm flex items-center justify-center"><span class="text-black font-geist font-bold text-xs">U</span></div>
+        <span class="text-sm text-white/30">© 2025 Uros Brankovic. Built with the latest Shopify ecosystem knowledge.</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="mailto:ubrankovic38@gmail.com" class="text-white/25 hover:text-[#c6f91f] transition-colors"><i data-lucide="mail" class="w-4 h-4"></i></a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="text-white/25 hover:text-[#c6f91f] transition-colors"><i data-lucide="github" class="w-4 h-4"></i></a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="text-white/25 hover:text-[#c6f91f] transition-colors"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+        <a href="#about" class="text-xs text-white/25 hover:text-white transition-colors uppercase tracking-wider">Back to top</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast container -->
+<div id="toast-container" class="fixed bottom-6 right-6 z-[100] flex flex-col gap-3"></div>
+
+<script>
+lucide.createIcons();
+
+// Nav scroll
+const navbar=document.getElementById('navbar');
+window.addEventListener('scroll',()=>{navbar.classList.toggle('nav-scrolled',window.scrollY>50)});
+
+// Mobile menu
+const mobileToggle=document.getElementById('mobile-toggle'),mobileClose=document.getElementById('mobile-close'),mobileMenu=document.getElementById('mobile-menu');
+mobileToggle.addEventListener('click',()=>mobileMenu.classList.add('open'));
+mobileClose.addEventListener('click',()=>mobileMenu.classList.remove('open'));
+document.querySelectorAll('.mobile-link').forEach(l=>l.addEventListener('click',()=>mobileMenu.classList.remove('open')));
+
+// Reveal on scroll
+const revealObs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');revealObs.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));
+
+// Stat counters
+const statObs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){const el=e.target,target=parseInt(el.dataset.count);let c=0;const inc=target/(1500/16);const t=setInterval(()=>{c+=inc;if(c>=target){c=target;clearInterval(t)}el.textContent=Math.floor(c)+'+'},16);statObs.unobserve(el)}})},{threshold:.5});
+document.querySelectorAll('[data-count]').forEach(el=>statObs.observe(el));
+
+// Card glow
+document.querySelectorAll('.card-glow').forEach(card=>{card.addEventListener('mousemove',(e)=>{const r=card.getBoundingClientRect();card.style.setProperty('--mx',((e.clientX-r.left)/r.width*100)+'%');card.style.setProperty('--my',((e.clientY-r.top)/r.height*100)+'%')})});
+
+// Feature toggle (accordion)
+document.querySelectorAll('.feature-toggle').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const targetId=btn.dataset.target;
+    const content=document.getElementById(targetId);
+    const chevron=btn.querySelector('.feature-chevron');
+    const isHidden=content.classList.contains('hidden');
+    // Close all
+    document.querySelectorAll('.feature-content').forEach(c=>c.classList.add('hidden'));
+    document.querySelectorAll('.feature-chevron').forEach(c=>c.style.transform='');
+    if(isHidden){
+      content.classList.remove('hidden');
+      if(chevron)chevron.style.transform='rotate(180deg)';
+      content.style.animation='reveal .4s cubic-bezier(.2,.8,.2,1) both';
+    }
+  });
+});
+
+// Toast
+function showToast(msg,type='success'){
+  const c=document.getElementById('toast-container'),t=document.createElement('div');
+  const icon=type==='success'?'check-circle':'alert-circle',color=type==='success'?'text-[#c6f91f]':'text-red-400',border=type==='success'?'border-[#c6f91f]/30':'border-red-500/30';
+  t.className=`toast-enter flex items-center gap-3 bg-[#0B0F13] border ${border} rounded-sm px-5 py-4 shadow-2xl max-w-sm`;
+  t.innerHTML=`<i data-lucide="${icon}" class="w-5 h-5 ${color} flex-shrink-0"></i><span class="text-sm text-white/70">${msg}</span>`;
+  c.appendChild(t);lucide.createIcons({nodes:[t]});
+  setTimeout(()=>{t.classList.replace('toast-enter','toast-exit');setTimeout(()=>t.remove(),300)},4000);
+}
+
+// Contact form
+const contactForm=document.getElementById('contact-form'),submitBtn=document.getElementById('submit-btn'),btnText=document.getElementById('btn-text');
+contactForm.addEventListener('submit',(e)=>{
+  e.preventDefault();submitBtn.disabled=true;submitBtn.classList.add('opacity-70','cursor-not-allowed');btnText.textContent='Opening email...';
+  const n=encodeURIComponent(contactForm.name.value),em=encodeURIComponent(contactForm.email.value),ty=encodeURIComponent(contactForm.type.value||'Not specified'),m=encodeURIComponent(contactForm.message.value);
+  window.location.href=`mailto:ubrankovic38@gmail.com?subject=Portfolio Contact from ${n}&body=Name: ${n}%0AEmail: ${em}%0AProject Type: ${ty}%0A%0AMessage:%0A${m}`;
+  setTimeout(()=>{showToast('Email client opened! If not, email ubrankovic38@gmail.com directly');submitBtn.disabled=false;submitBtn.classList.remove('opacity-70','cursor-not-allowed');btnText.textContent='Send Message';contactForm.reset()},1000);
+});
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){const h=this.getAttribute('href');if(h==='#')return;e.preventDefault();const t=document.querySelector(h);if(t)window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-80,behavior:'smooth'})})});
+
+// Active nav
+const sections=document.querySelectorAll('section[id]'),navLinks=document.querySelectorAll('.nav-link');
+const navObs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){const id=e.target.getAttribute('id');navLinks.forEach(l=>{if(l.getAttribute('href')===`#${id}`){l.classList.remove('text-white/60');l.classList.add('text-[#c6f91f]')}else{l.classList.add('text-white/60');l.classList.remove('text-[#c6f91f]')}})}})},{threshold:.2,rootMargin:'-80px 0px -50% 0px'});
+sections.forEach(s=>navObs.observe(s));
+</script>
+</body>
+</html>
